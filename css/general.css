@@ -1,0 +1,108 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+html {
+  font-family: sans-serif;
+  background-color: #bad768;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  overflow: hidden;  max-width: 38em;
+  margin: 1em auto 1em;
+  padding: 0.5em;
+}
+
+header {
+  width: 100%;
+  background: #000;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+input {
+  margin-bottom: 1em;
+}
+
+
+input,
+textarea {
+  font-size: 1rem;
+}
+
+textarea {
+  max-width: 37em;
+}
+
+.input-text {
+  padding: 0.5em 0.5em;
+  width: 100%;
+
+  background-image: linear-gradient(to bottom, #efefef, #fff);
+  border: 1px solid #ccc;
+
+  font-size: 1rem
+}
+
+input + label {
+  display: inline;
+}
+
+button {
+  margin: 1em 0em 1em;
+  padding: 0.5em 3em;
+  font-size: 1.125rem;
+  border: 2px solid #FFB800;
+  background-image: linear-gradient(to bottom, #FC0, #EEA766);
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  float: right;
+}
+
+button:active,
+button:hover,
+button:focus {
+  border: 2px solid #F1CE71;
+  background-image: linear-gradient(to bottom, #F8D855, #F1C69F);
+}
+
+.radio-container {
+  display: block;
+}
+
+.radio-container label {
+  font-weight: normal;
+}
+
+legend {
+  font-weight: bold;
+}
+
+fieldset {
+  border: 1px solid #fff;
+}
+
+.error {
+  display: block;
+  color: #f33;
+}
+
+.input-error {
+  border: 3px solid #f33;
+}

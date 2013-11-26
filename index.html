@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang=en-ca>
+<head>
+  <meta charset=utf-8>
+  <title>The Spooky Book Club Form!</title>
+  <link href="css/general.css" rel="stylesheet">
+  <meta name="handheldfriendly" content="true">
+  <meta name="mobileoptimized" content="240">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+  <header>
+    <img src="img/spooky-book-club.svg">
+  </header>
+<form>
+  <div>
+    <label for="name">Name</label>
+    <input type="text" id="name" class="input-text" required>
+  </div>
+
+  <div>
+    <label for="email">Email-address</label>
+    <input type="email" id="email" class="input-text" max="256" required>
+  </div>
+
+   <div>
+    <label for="phone">Phone</label>
+    <input type="tel" class="input-text" id="phone" maxlength="17">
+  </div>
+
+  <div>
+    <label for="address">Address</label>
+    <input type="text" id="address" class="input-text" required>
+  </div>
+
+  <div>
+    <label for="city">City</label>
+    <input type="text" id="city" class="input-text" required>
+  </div>
+
+    <div>
+    <label for="province">Province</label>
+    <select id="province" required>
+      <option></option>
+      <option>AB</option>
+      <option>BC</option>
+      <option>MB</option>
+      <option>NB</option>
+      <option>NL</option>
+      <option>NS</option>
+      <option>NT</option>
+      <option>NU</option>
+      <option>ON</option>
+      <option>PE</option>
+      <option>QC</option>
+      <option>SK</option>
+      <option>YT</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="postal">Postal Code</label>
+    <input type="text" id="postal" class="input-text" maxlength="7" required>
+  </div>
+
+  <div>
+    <label for="time">What time of day would be best to meet?</label>
+    <input type="time" id="time" required>
+  </div>
+
+   <div>
+    <label for="books-read">How many books have you read this year</label>
+    <input type="number" id="books-read" pattern="[0-9]*">
+  </div>
+
+  <div>
+    <label for="desription  ">Describe your favourite book / author</label>
+    <textarea id="desription" class="input-text"></textarea>
+  </div>
+
+  <fieldset>
+    <legend>How much do you love spooky storys?</legend>
+
+    <div class="radio-container">
+      <input type="radio" id="extreme" name="satisfaction">
+      <label for="extreme">Hate</label>
+    </div>
+
+    <div class="radio-container">
+      <input type="radio" id="dissatisfied" name="satisfaction">
+      <label for="dissatisfied">Dislike</label>
+    </div>
+
+    <div class="radio-container">
+      <input type="radio" id="neutral" name="satisfaction">
+      <label for="neutral">Neutral</label>
+    </div>
+
+    <div class="radio-container">
+      <input type="radio" id="satisfied" name="satisfaction">
+      <label for="satisfied">Like</label>
+    </div>
+
+    <div class="radio-container">
+      <input type="radio" id="extremegood" name="satisfaction">
+      <label for="extremegood">Love</label>
+    </div>
+  </fieldset>
+
+  <button type="submit">Submit</button>
+</body>
+</html>
